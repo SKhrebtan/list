@@ -1,3 +1,7 @@
+import SlimSelect from 'slim-select';
+import 'slim-select/dist/slimselect.css';
+ 
+
 const select = document.querySelector('.select-pokemon')
 const pokemonPhoto = document.querySelector('.pokemon');
 
@@ -10,6 +14,32 @@ fetch('https://pokeapi.co/api/v2/pokemon?limit=100')
             return `<option value="${t.url}">${t.name}</option>`;
         }).join('');
         select.innerHTML = markup;
+        new SlimSelect({
+    select: '.select-pokemon',
+    settings: {
+    disabled: false,
+    alwaysOpen: false,
+    showSearch: true,
+    searchPlaceholder: 'Search',
+    searchText: 'No Results',
+    searchingText: 'Searching...',
+    searchHighlight: false,
+    closeOnSelect: true,
+    contentLocation: document.body,
+    contentPosition: 'absolute',
+    openPosition: 'auto', // options: auto, up, down
+    placeholderText: 'Select Value',
+    allowDeselect: false,
+    hideSelected: false,
+    showOptionTooltips: false,
+    minSelected: 0,
+    maxSelected: 1000,
+    timeoutDelay: 200,
+    maxValuesShown: 20,
+    maxValuesMessage: '{number} selected',
+  },
+});
+       
     })
 
 select.addEventListener('change', onSelectChange);
@@ -21,7 +51,7 @@ fetch(`${select.value}`).then(response => {return response.json()}).then(t => {r
 
 
 function onPhoto(photo) {
-    const markup = `<img src="${photo}" alt="pokemon">`;
+    const markup = `<img src="${photo}" alt="pokemon" width="300px">`;
     pokemonPhoto.innerHTML = markup;    
 }
 

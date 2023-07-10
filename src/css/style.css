@@ -43,14 +43,15 @@ body {
   color: white;
 }
 
-.pokemon {
+/* .pokemon {
   position: fixed;
   top: 50px;
   left: 30px;
-}
+} */
 
 .select-pokemon {
-  position: fixed;
-  top: 30px;
-  left: 30px;
+  width: 300px !important;
+}
+body {
+  display: flex;
 }
