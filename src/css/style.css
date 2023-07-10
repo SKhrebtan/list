@@ -55,3 +55,11 @@ body {
 body {
   display: flex;
 }
+
+.weather-input {
+  width: 150px;
+  height: 25px;
+  position: absolute;
+  left: 50%;
+  top: 50px;
+}
