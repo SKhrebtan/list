@@ -1,0 +1,2 @@
+!function(){var e=document.querySelector(".hero-list"),t=document.querySelector(".input"),n=document.querySelector(".button");t.addEventListener("keydown",(function(n){if("Enter"!==n.code)return;if(""===t.value)return;var r=document.createElement("li");return r.classList.add("li-item"),r.textContent=t.value,t.value="",e.appendChild(r)})),n.addEventListener("click",(function(n){var r=document.createElement("li");return r.classList.add("li-item"),r.textContent=t.value,t.value="",e.appendChild(r)}))}();
+//# sourceMappingURL=index.62aad0c7.js.map

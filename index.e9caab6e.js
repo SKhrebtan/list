@@ -1,0 +1,2 @@
+const e=document.querySelector(".hero-list"),t=document.querySelector(".input"),n=document.querySelector(".button");t.addEventListener("keydown",(function(n){if("Enter"!==n.code)return;if(""===t.value)return;const u=document.createElement("li");return u.classList.add("li-item"),u.textContent=t.value,t.value="",e.appendChild(u)})),n.addEventListener("click",(function(n){const u=document.createElement("li");return u.classList.add("li-item"),u.textContent=t.value,t.value="",e.appendChild(u)}));
+//# sourceMappingURL=index.e9caab6e.js.map
