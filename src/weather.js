@@ -1,9 +1,10 @@
 import throttle from 'lodash.throttle';
+import debounce from 'lodash.debounce';
 
 const weatherBlock = document.querySelector('.weather-section');
 const weatherInput = document.querySelector('.weather-input');
 
-weatherInput.addEventListener('input', throttle(onInputType, 2000));
+weatherInput.addEventListener('input', debounce(onInputType, 3000   ));
 let city = 'kiev';
 
 function onInputType(e) {
