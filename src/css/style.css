@@ -42,3 +42,15 @@ body {
   background-color: tomato;
   color: white;
 }
+
+.pokemon {
+  position: fixed;
+  top: 50px;
+  left: 30px;
+}
+
+.select-pokemon {
+  position: fixed;
+  top: 30px;
+  left: 30px;
+}
