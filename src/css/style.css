@@ -63,3 +63,15 @@ body {
   left: 50%;
   top: 50px;
 }
+
+.dogs {
+  position: absolute;
+  top: 40%;
+  left: 20px;
+}
+
+.dog-info {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+}
